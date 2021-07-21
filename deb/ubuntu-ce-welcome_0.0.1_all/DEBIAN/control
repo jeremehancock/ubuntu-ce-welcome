@@ -4,6 +4,6 @@ Section: system
 Priority: optional
 Architecture: all
 Maintainer: Jereme Hancock <support@ubuntuce.com>
-Depends: gambas-runtime, gambas-gb-qt, kdelibs4c2a, hostminder
+Depends: gambas3-runtime, gambas3-gb-qt5, hostminder
 Description: Welcome to UbuntuCE
 
