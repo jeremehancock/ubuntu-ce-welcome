@@ -1,0 +1,20 @@
+' Gambas class file
+
+Public Sub hostMinderLauncher_Click()
+
+  Exec ["hostminder"]
+
+End
+
+Public Sub showHideToggle_Click()
+
+  If showHideToggle.Value = False Then
+    Print "disable"
+    Shell ("sed -i '/X-GNOME-Autostart-enabled=/d' ~/.config/autostart/hostminder.desktop; echo 'X-GNOME-Autostart-enabled=false' >> ~/.config/autostart/hostminder.desktop;")
+  Else
+    Print "enable"
+    Shell ("sed -i '/X-GNOME-Autostart-enabled=/d' ~/.config/autostart/hostminder.desktop; echo 'X-GNOME-Autostart-enabled=true' >> ~/.config/autostart/hostminder.desktop")
+  End If
+
+End
+

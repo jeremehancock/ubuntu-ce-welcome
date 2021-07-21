@@ -1,0 +1,32 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,141,69)
+  Text = ("Welcome To UbuntuCE")
+  Resizable = False
+  { Header TextLabel
+    MoveScaled(4,2,52,7)
+    Font = Font["Ubuntu,+8"]
+    Text = ("Welcome To UbuntuCE")
+  }
+  { aboutUbuntuCE Label
+    MoveScaled(4,10,88,50)
+    Font = Font["+2"]
+    Text = ("Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system \ngeared towards Christians. It is based on the popular Ubuntu Linux. \n\nUbuntu is a complete Linux-based operating system, freely available with both \ncommunity and professional support. \n\nThe goal of UbuntuCE is to bring the power and security of \nUbuntu to Christians.\n\nUbuntuCE does not attempt to \"re-brand\" Ubuntu. So using UbuntuCE will \nhave the same general look and feel as Ubuntu.\n\nAlong with the standard Ubuntu applications, UbuntuCE includes additional \nsoftware such as BibleTime and Host Minder as well as full audio Bible in mp3 \nformat.\n\nHost Minder is an application that allows you to block unwanted domains \nfrom your system. Use the button below to give it a try and learn more.")
+  }
+  { hostMinderLauncher Button
+    MoveScaled(4,63,27,4)
+    NoTabFocus = True
+    Text = ("Configure Host Minder")
+  }
+  { logo PictureBox
+    MoveScaled(91,-7,50,64)
+    Picture = Picture["ubuntu_logo_icon_144777.png"]
+  }
+  { showHideToggle CheckBox
+    MoveScaled(122,64,19,4)
+    NoTabFocus = True
+    Text = ("Show on Startup")
+    Value = CheckBox.True
+  }
+}
