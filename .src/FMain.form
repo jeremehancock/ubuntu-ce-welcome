@@ -24,8 +24,9 @@
     Picture = Picture["ubuntu_logo_icon_144777.png"]
   }
   { showHideToggle CheckBox
-    MoveScaled(119,64,25,4)
+    MoveScaled(126,64,19,4)
     NoTabFocus = True
-    Text = ("Do Not Show on Startup")
+    Text = ("Show on Startup")
+    Value = CheckBox.True
   }
 }
