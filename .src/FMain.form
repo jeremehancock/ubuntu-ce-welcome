@@ -19,14 +19,14 @@
     NoTabFocus = True
     Text = ("Configure Host Minder")
   }
-  { logo PictureBox
-    MoveScaled(92,-9,74,64)
-    Picture = Picture["ubuntu_logo_icon_144777.png"]
-  }
   { showHideToggle CheckBox
     MoveScaled(126,64,19,4)
     NoTabFocus = True
     Text = ("Show on Startup")
     Value = CheckBox.True
+  }
+  { PictureBox1 PictureBox
+    MoveScaled(93,-7,66,69)
+    Picture = Picture["logo.png"]
   }
 }
