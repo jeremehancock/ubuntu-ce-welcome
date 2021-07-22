@@ -1,7 +1,7 @@
 # Gambas Form File 3.0
 
 { Form Form
-  MoveScaled(0,0,141,69)
+  MoveScaled(0,0,145,69)
   Text = ("Welcome To UbuntuCE")
   Resizable = False
   { Header TextLabel
@@ -20,13 +20,12 @@
     Text = ("Configure Host Minder")
   }
   { logo PictureBox
-    MoveScaled(91,-7,50,64)
+    MoveScaled(92,-9,74,64)
     Picture = Picture["ubuntu_logo_icon_144777.png"]
   }
   { showHideToggle CheckBox
-    MoveScaled(122,64,19,4)
+    MoveScaled(119,64,25,4)
     NoTabFocus = True
-    Text = ("Show on Startup")
-    Value = CheckBox.True
+    Text = ("Do Not Show on Startup")
   }
 }
