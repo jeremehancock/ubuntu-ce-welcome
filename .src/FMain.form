@@ -1,35 +1,41 @@
 # Gambas Form File 3.0
 
 { Form Form
-  MoveScaled(0,0,145,76)
+  Move(0,0,1200,584)
+  #Scaled = False
   Text = ("Welcome To UbuntuCE")
   Resizable = False
+  SkipTaskbar = True
+  AutoResize = True
   { Header TextLabel
-    MoveScaled(4,2,52,7)
-    Font = Font["Ubuntu,+8"]
+    Move(32,24,568,56)
+    Font = Font["+10"]
     Text = ("Welcome To UbuntuCE")
   }
   { aboutUbuntuCE Label
-    MoveScaled(5,12,88,53)
+    Move(40,112,704,408)
     Font = Font["+2"]
     AutoResize = True
     Text = ("Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system \ngeared towards Christians. It is based on the popular Ubuntu Linux. \n\nUbuntu is a complete Linux-based operating system, freely available with both \ncommunity and professional support. \n\nThe goal of UbuntuCE is to bring the power and security of \nUbuntu to Christians.\n\nUbuntuCE does not attempt to \"re-brand\" Ubuntu. So using UbuntuCE will \nhave the same general look and feel as Ubuntu.\n\nAlong with the standard Ubuntu applications, UbuntuCE includes additional \nsoftware such as BibleTime, Xiphos, OpenLP, Host Minder, and more.\n\nHost Minder is an application that allows you to block unwanted domains \nfrom your system. Use the button below to give it a try and learn more.")
     Alignment = Align.TopNormal
   }
   { hostMinderLauncher Button
-    MoveScaled(4,68,27,5)
+    Move(32,528,216,40)
     NoTabFocus = True
-    Text = ("   Configure Host Minder   ")
+    AutoResize = True
+    Text = ("   Configure Host Minder  ")
     Picture = Picture["hostminder.png"]
   }
   { showHideToggle CheckBox
-    MoveScaled(126,71,19,4)
+    Move(1040,536,168,32)
     NoTabFocus = True
-    Text = ("Show on Startup")
+    AutoResize = True
+    Text = ("Show on Startup     ")
     Value = CheckBox.True
   }
   { PictureBox1 PictureBox
-    MoveScaled(93,-8,66,69)
+    Move(784,-64,552,560)
+    AutoResize = True
     Picture = Picture["logo.png"]
   }
 }
