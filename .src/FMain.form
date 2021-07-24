@@ -36,6 +36,6 @@
   { PictureBox1 PictureBox
     Move(784,-64,552,560)
     AutoResize = True
-    Picture = Picture["logo.png"]
+    Picture = Picture["ubuntu-logo.png"]
   }
 }

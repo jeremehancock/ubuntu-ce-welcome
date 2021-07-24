@@ -9,9 +9,39 @@ End
 Public Sub showHideToggle_Click()
 
   If showHideToggle.Value = False Then
-    Shell ("sed -i '/X-GNOME-Autostart-enabled=/d' ~/.config/autostart/ubuntu-ce-welcome.desktop; echo 'X-GNOME-Autostart-enabled=false' >> ~/.config/autostart/ubuntu-ce-welcome.desktop;")
+    Shell "rm ~/.config/autostart/ubuntu-ce-welcome.desktop" Wait
   Else
-    Shell ("sed -i '/X-GNOME-Autostart-enabled=/d' ~/.config/autostart/ubuntu-ce-welcome.desktop; echo 'X-GNOME-Autostart-enabled=true' >> ~/.config/autostart/ubuntu-ce-welcome.desktop")
+    Shell "cp /usr/share/applications/ubuntu-ce-welcome.desktop ~/.config/autostart/" Wait
   End If
 
 End
+
+Public Sub Form_Open()
+
+  If Exist(User.Home &/ ".config/autostart/ubuntu-ce-welcome.desktop") Then 
+    Shell "rm /tmp/ce-w-startup-true" Wait
+    Shell "rm /tmp/uce-w-startup-false" Wait
+
+    Shell "if grep -Fxq 'X-GNOME-Autostart-enabled=true' ~/.config/autostart/ubuntu-ce-welcome.desktop; then touch /tmp/uce-w-startup-true; fi" Wait
+    Shell "if grep -Fxq 'X-GNOME-Autostart-enabled=false' ~/.config/autostart/ubuntu-ce-welcome.desktop; then touch /tmp/uce-w-startup-false; fi" Wait
+    
+    If Exist("/tmp/uce-w-startup-true") Then
+      showHideToggle.Value = True
+    End If
+    If Exist("/tmp/uce-w-startup-false") Then
+      showHideToggle.Value = False
+    End If
+  Else
+    showHideToggle.Value = False
+  End If
+
+End
+
+Public Sub Form_Close()
+
+    Shell "rm /tmp/ce-w-startup-true" Wait
+    Shell "rm /tmp/uce-w-startup-false" Wait
+    
+End
+
+
