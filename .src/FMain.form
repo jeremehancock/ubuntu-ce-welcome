@@ -1,7 +1,7 @@
 # Gambas Form File 3.0
 
 { Form Form
-  Move(0,0,1200,584)
+  Move(0,0,1200,672)
   #Scaled = False
   Text = ("Welcome To UbuntuCE")
   Resizable = False
@@ -13,21 +13,21 @@
     Text = ("Welcome To UbuntuCE")
   }
   { aboutUbuntuCE Label
-    Move(40,112,704,408)
+    Move(40,112,704,488)
     Font = Font["+2"]
     AutoResize = True
-    Text = ("Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system \ngeared towards Christians. It is based on the popular Ubuntu Linux. \n\nUbuntu is a complete Linux-based operating system, freely available with both \ncommunity and professional support. \n\nThe goal of UbuntuCE is to bring the power and security of \nUbuntu to Christians.\n\nUbuntuCE does not attempt to \"re-brand\" Ubuntu. So using UbuntuCE will \nhave the same general look and feel as Ubuntu.\n\nAlong with the standard Ubuntu applications, UbuntuCE includes additional \nsoftware such as BibleTime, Xiphos, OpenLP, Host Minder, and more.\n\nHost Minder is an application that allows you to block unwanted domains \nfrom your system. Use the button below to give it a try and learn more.")
+    Text = ("Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system \ngeared towards Christians. It is based on the popular Ubuntu Linux. \n\nUbuntu is a complete Linux-based operating system, freely available with both \ncommunity and professional support. \n\nThe goal of UbuntuCE is to bring the power and security of \nUbuntu to Christians.\n\nUbuntuCE does not attempt to \"rebrand\" Ubuntu. So using UbuntuCE will \nhave the same general look and feel as Ubuntu.\n\nAlong with the standard Ubuntu applications, UbuntuCE includes additional \nsoftware such as BibleTime, Xiphos, OpenLP, Host Minder, and more.\n\nUbuntuCE also comes with pre-configured web content filtering powered by \nOpenDNS FamilyShield.\n\nAdditionally UbuntuCE includes Host Minder. Host Minder is an application \nthat allows you to block unwanted domains from your system. It is highly \nrecommended that you give it a try.")
     Alignment = Align.TopNormal
   }
   { hostMinderLauncher Button
-    Move(32,528,216,40)
+    Move(32,608,216,40)
     NoTabFocus = True
     AutoResize = True
     Text = ("   Configure Host Minder  ")
     Picture = Picture["hostminder.png"]
   }
   { showHideToggle CheckBox
-    Move(1040,536,168,32)
+    Move(1040,624,168,32)
     NoTabFocus = True
     AutoResize = True
     Text = ("Show on Startup     ")

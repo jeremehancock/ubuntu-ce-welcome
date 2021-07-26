@@ -1,5 +1,5 @@
 Package: ubuntu-ce-welcome
-Version: 0.0.1
+Version: 0.0.2
 Section: system
 Priority: optional
 Architecture: all
