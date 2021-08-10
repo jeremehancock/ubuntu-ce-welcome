@@ -45,3 +45,15 @@ Public Sub Form_Close()
 End
 
 
+
+Public Sub docsLauncher_Click()
+
+  Shell "xdg-open 'https://docs.ubuntuce.com'"
+
+End
+
+Public Sub patreonLauncher_MouseDown()
+
+  Shell "xdg-open 'https://www.patreon.com/ubuntuce'"
+
+End
