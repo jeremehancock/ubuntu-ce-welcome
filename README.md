@@ -2,4 +2,4 @@
 
 ## [UbuntuCE](https://ubuntuce.com/)
 
-<img src="https://raw.githubusercontent.com/mhancoc7/welcome-to-ubuntu-ce-desktop.png" />
+<img src="https://raw.githubusercontent.com/mhancoc7/ubuntu-ce-welcome/main/welcome-to-ubuntu-ce-desktop.png" />
