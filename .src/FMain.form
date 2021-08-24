@@ -1,55 +1,112 @@
 # Gambas Form File 3.0
 
 { Form Form
-  Move(0,0,1200,632)
+  Move(0,0,1200,600)
   #Scaled = False
   Text = ("Welcome To UbuntuCE")
   Resizable = False
   SkipTaskbar = True
   AutoResize = True
   { Header TextLabel
-    Move(32,24,568,56)
+    Move(16,16,568,56)
     Font = Font["+10"]
     Text = ("Welcome To UbuntuCE")
   }
-  { aboutUbuntuCE Label
-    Move(40,112,704,448)
-    Font = Font["+2"]
-    AutoResize = True
-    Text = ("Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system \ngeared towards Christians. It is based on the popular Ubuntu Linux. \n\nThe goal of UbuntuCE is to bring the power and security of \nUbuntu to Christians.\n\nUbuntuCE does not attempt to \"rebrand\" Ubuntu. So using UbuntuCE will \nhave the same general look and feel as Ubuntu.\n\nAlong with the standard Ubuntu applications, UbuntuCE includes additional \nChristian software such as BibleTime, Xiphos, OpenLP, Presenter by WP, and more.\n\nUbuntuCE also comes with pre-configured web content filtering powered by \nCleanBrowsing.\n\nAdditionally UbuntuCE includes Host Minder. Host Minder is an application \nthat allows you to block unwanted domains from your system. It is highly \nrecommended that you give it a try.")
-    Alignment = Align.TopNormal
-  }
-  { hostMinderLauncher Button
-    Move(32,568,216,40)
+  { showHideToggle CheckBox
+    Move(1056,560,168,32)
     NoTabFocus = True
     Mouse = Mouse.Pointing
-    AutoResize = True
-    Text = ("   Configure Host Minder  ")
-    Picture = Picture["hostminder.png"]
-  }
-  { showHideToggle CheckBox
-    Move(1048,592,168,32)
-    NoTabFocus = True
     AutoResize = True
     Text = ("Show on Startup     ")
     Value = CheckBox.True
   }
+  { patreonLauncher PictureBox
+    Move(816,512,208,80)
+    NoTabFocus = True
+    Mouse = Mouse.Pointing
+    Picture = Picture["patreon.png"]
+  }
   { PictureBox1 PictureBox
     Move(784,-64,552,560)
+    NoTabFocus = True
     AutoResize = True
     Picture = Picture["ubuntu-logo.png"]
   }
-  { docsLauncher Button
-    Move(272,568,272,40)
-    NoTabFocus = True
-    Mouse = Mouse.Pointing
-    AutoResize = True
-    Text = ("   Checkout The UbuntuCE Docs  ")
-    Picture = Picture["ubuntu-logo-icon.png"]
-  }
-  { patreonLauncher PictureBox
-    Move(576,544,208,80)
-    Mouse = Mouse.Pointing
-    Picture = Picture["patreon.png"]
+  { Tabs TabStrip
+    Move(16,96,752,496)
+    Count = 2
+    TextFont = Font["+2"]
+    Index = 0
+    Text = ("  Overview  ")
+    { Label1 Label
+      Move(24,8,712,440)
+      Font = Font["+2"]
+      Text = ("Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system \ngeared towards Christians. It is based on the popular Ubuntu Linux. \n\nThe goal of UbuntuCE is to bring the power and security of \nUbuntu to Christians.\n\nUbuntuCE does not attempt to \"rebrand\" Ubuntu. So using UbuntuCE will \nhave the same general look and feel as Ubuntu.\n\nAlong with the standard Ubuntu applications, UbuntuCE includes additional \nChristian software such as BibleTime, Xiphos, OpenLP, Presenter by WP, and more.\n\nUbuntuCE also comes with pre-configured web content filtering powered by \nCleanBrowsing. It is also easy to switch to OpenDNS FamilyShield by using\nthe DNS Minder application.\n\nAdditionally UbuntuCE includes Host Minder. Host Minder is an application \nthat allows you to block unwanted domains from your system. It is highly \nrecommended that you give it a try.")
+    }
+    Index = 1
+    Text = ("  After Install  ")
+    { helpPanel Panel
+      Move(496,104,216,88)
+      Border = Border.Plain
+    }
+    { appearancePanel Panel
+      Move(24,104,432,88)
+      Border = Border.Plain
+    }
+    { Panel1 Panel
+      Move(24,296,688,88)
+      Border = Border.Plain
+      { dnsminderLauncher Button
+        Move(392,24,232,40)
+        Font = Font["Bold,+1"]
+        Mouse = Mouse.Pointing
+        Text = ("   Configure DNS Minder  ")
+        Picture = Picture["dnsminder.png"]
+      }
+    }
+    { changeWallpaper Button
+      Move(48,128,200,40)
+      Font = Font["Bold,+1"]
+      Mouse = Mouse.Pointing
+      Text = ("   Change Wallpaper  ")
+      Picture = Picture["wallpaper.png"]
+    }
+    { selectTheme Button
+      Move(272,128,160,40)
+      Font = Font["Bold,+1"]
+      Mouse = Mouse.Pointing
+      Text = ("  Select Theme  ")
+      Picture = Picture["theme.png"]
+    }
+    { hostMinderLauncher Button
+      Move(96,320,232,40)
+      Font = Font["Bold,+1"]
+      Mouse = Mouse.Pointing
+      Text = ("   Configure Host Minder  ")
+      Picture = Picture["hostminder.png"]
+    }
+    { docsLauncher Button
+      Move(536,128,136,40)
+      Font = Font["Bold,+1"]
+      Mouse = Mouse.Pointing
+      Text = ("  Get Help  ")
+      Picture = Picture["help.png"]
+    }
+    { appearanceLabel Label
+      Move(24,64,192,32)
+      Font = Font["+4"]
+      Text = ("Appearance")
+    }
+    { helpLabel Label
+      Move(496,64,192,32)
+      Font = Font["+4"]
+      Text = ("Documentation")
+    }
+    { securityLabel Label
+      Move(24,256,192,32)
+      Font = Font["+4"]
+      Text = ("Family Settings")
+    }
+    Index = 0
   }
 }

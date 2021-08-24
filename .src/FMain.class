@@ -1,10 +1,5 @@
 ' Gambas class file
 
-Public Sub hostMinderLauncher_Click()
-
-  Exec ["hostminder"]
-
-End
 
 Public Sub showHideToggle_Click()
 
@@ -46,14 +41,40 @@ End
 
 
 
+Public Sub patreonLauncher_MouseDown()
+
+  Shell "xdg-open 'https://www.patreon.com/ubuntuce'"
+
+End
+
+
+Public Sub changeWallpaper_Click()
+
+  Exec ["gnome-control-center", "background"]
+
+End
+
+Public Sub selectTheme_Click()
+
+  Exec ["gnome-control-center", "ubuntu"]
+
+End
+
+Public Sub hostMinderLauncher_Click()
+
+  Exec ["hostminder"]
+
+End
+
+
 Public Sub docsLauncher_Click()
 
   Shell "xdg-open 'https://docs.ubuntuce.com'"
 
 End
 
-Public Sub patreonLauncher_MouseDown()
+Public Sub dnsminderLauncher_Click()
 
-  Shell "xdg-open 'https://www.patreon.com/ubuntuce'"
+  Exec ["dnsminder"]
 
 End
