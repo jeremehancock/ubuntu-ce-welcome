@@ -2,6 +2,6 @@
 
 ## [UbuntuCE](https://ubuntuce.com/)
 
-<img src="https://raw.githubusercontent.com/jeremehancock/ubuntu-ce-welcome/main/welcome-to-ubuntu-ce-desktop-overview-tab.png" />
+<img src="https://raw.githubusercontent.com/jeremehancock/ubuntu-ce-welcome/main/welcome-to-ubuntu-ce-desktop-overview.png" />
 
 <img src="https://raw.githubusercontent.com/jeremehancock/ubuntu-ce-welcome/main/welcome-to-ubuntu-ce-desktop-after-install-tab.png" />
