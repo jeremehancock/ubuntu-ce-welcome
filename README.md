@@ -4,4 +4,4 @@
 
 <img src="https://raw.githubusercontent.com/jeremehancock/ubuntu-ce-welcome/main/welcome-to-ubuntu-ce-desktop.png" />
 
-<img src="https://raw.githubusercontent.com/jeremehancock/ubuntu-ce-welcome/main/welcome-to-ubuntu-ce-desktop-after-insatll-tab.png" />
+<img src="https://raw.githubusercontent.com/jeremehancock/ubuntu-ce-welcome/main/welcome-to-ubuntu-ce-desktop-after-install-tab.png" />
