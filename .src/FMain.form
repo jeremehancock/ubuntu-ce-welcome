@@ -6,7 +6,6 @@
   Text = ("Welcome To UbuntuCE")
   Resizable = False
   SkipTaskbar = True
-  AutoResize = True
   { Header TextLabel
     Move(16,16,568,56)
     Font = Font["+10"]
@@ -34,14 +33,14 @@
   }
   { Tabs TabStrip
     Move(16,96,752,496)
-    Count = 2
+    Count = 3
     TextFont = Font["+2"]
     Index = 0
     Text = ("  Overview  ")
-    { Label1 Label
+    { Description Label
       Move(24,8,712,440)
       Font = Font["+2"]
-      Text = ("Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system \ngeared towards Christians. It is based on the popular Ubuntu Linux. \n\nThe goal of UbuntuCE is to bring the power and security of \nUbuntu to Christians.\n\nUbuntuCE does not attempt to \"rebrand\" Ubuntu. So using UbuntuCE will \nhave the same general look and feel as Ubuntu.\n\nAlong with the standard Ubuntu applications, UbuntuCE includes additional \nChristian software such as BibleTime, Xiphos, OpenLP, Presenter by WP, and more.\n\nUbuntuCE also comes with pre-configured web content filtering powered by \nCleanBrowsing. It is also easy to switch to OpenDNS FamilyShield by using\nthe DNS Minder application.\n\nAdditionally UbuntuCE includes Host Minder. Host Minder is an application \nthat allows you to block unwanted domains from your system. It is highly \nrecommended that you give it a try.")
+      Text = ("Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system \ngeared towards Christians. It is based on the popular Ubuntu Linux. \n\nThe goal of UbuntuCE is to bring the power and security of \nUbuntu to Christians.\n\nUbuntuCE does not attempt to \"rebrand\" Ubuntu. So using UbuntuCE will \nhave the same general look and feel as Ubuntu.\n\nAlong with the standard Ubuntu applications, UbuntuCE includes additional  \nChristian software such as BibleTime, Xiphos, OpenLP, Presenter by \nWorshipTools, and more.\n\nUbuntuCE also comes with pre-configured web content filtering powered by \nCleanBrowsing. It is also easy to switch to other DNS providers that provide \nFamily filters by using the DNS Minder application.\n\nAdditionally UbuntuCE includes Host Minder. Host Minder is an application \nthat allows you to block unwanted domains from your system. It is highly \nrecommended that you give it a try.")
     }
     Index = 1
     Text = ("  After Install  ")
@@ -60,7 +59,7 @@
         Move(392,24,232,40)
         Font = Font["Bold,+1"]
         Mouse = Mouse.Pointing
-        Text = ("   Configure DNS Minder  ")
+        Text = ("  Configure DNS Minder")
         Picture = Picture["dnsminder.png"]
       }
     }
@@ -68,28 +67,21 @@
       Move(48,128,200,40)
       Font = Font["Bold,+1"]
       Mouse = Mouse.Pointing
-      Text = ("   Change Wallpaper  ")
+      Text = ("   Change Wallpaper")
       Picture = Picture["wallpaper.png"]
     }
     { selectTheme Button
       Move(272,128,160,40)
       Font = Font["Bold,+1"]
       Mouse = Mouse.Pointing
-      Text = ("  Select Theme  ")
+      Text = ("  Select Theme")
       Picture = Picture["theme.png"]
-    }
-    { hostMinderLauncher Button
-      Move(96,320,232,40)
-      Font = Font["Bold,+1"]
-      Mouse = Mouse.Pointing
-      Text = ("   Configure Host Minder  ")
-      Picture = Picture["hostminder.png"]
     }
     { docsLauncher Button
       Move(536,128,136,40)
       Font = Font["Bold,+1"]
       Mouse = Mouse.Pointing
-      Text = ("  Get Help  ")
+      Text = ("  Get Help")
       Picture = Picture["help.png"]
     }
     { appearanceLabel Label
@@ -104,6 +96,109 @@
     }
     { securityLabel Label
       Move(24,256,192,32)
+      Font = Font["+4"]
+      Text = ("Family Settings")
+    }
+    { hostMinderLauncher Button
+      Move(96,320,232,40)
+      Font = Font["Bold,+1"]
+      Mouse = Mouse.Pointing
+      Expand = True
+      Text = ("  Configure Host Minder")
+      Picture = Picture["hostminder.png"]
+    }
+    Index = 2
+    Text = ("  Software  ")
+    { familySettinsPanel Panel
+      Move(16,376,720,72)
+      Border = Border.Plain
+    }
+    { churchSoftwareLabel Panel
+      Move(16,256,720,72)
+      Border = Border.Plain
+    }
+    { bibleStudyPanel Panel
+      Move(24,56,712,152)
+      Border = Border.Plain
+    }
+    { launchBibleTime Button
+      Move(80,80,136,40)
+      Font = Font["Bold,+1"]
+      Text = ("  BibleTime")
+      Picture = Picture["bibletime.png"]
+    }
+    { launchXiphos Button
+      Move(240,80,112,40)
+      Font = Font["Bold,+1"]
+      Text = ("  Xiphos")
+      Picture = Picture["xiphos.png"]
+    }
+    { launchBibledit Button
+      Move(568,80,120,40)
+      Font = Font["Bold,+1"]
+      Text = ("  Bibledit")
+      Picture = Picture["bibledit.png"]
+    }
+    { launchPresenter Button
+      Move(288,272,264,40)
+      Font = Font["Bold,+1"]
+      Text = ("  Presenter by WorshipTools")
+      Picture = Picture["worship-extreme-presenter.png"]
+    }
+    { FloodlightPresenter Button
+      Move(40,272,216,40)
+      Font = Font["Bold,+1"]
+      Text = ("  Floodlight Presenter")
+      Picture = Picture["floodlight.png"]
+    }
+    { DnsMinder Button
+      Move(400,392,152,40)
+      Font = Font["Bold,+1"]
+      Text = ("  DNS MInder")
+      Picture = Picture["dnsminder.png"]
+    }
+    { HostMinder Button
+      Move(200,392,152,40)
+      Font = Font["Bold,+1"]
+      Text = ("  Host Minder")
+      Picture = Picture["hostminder.png"]
+    }
+    { BollsBible Button
+      Move(408,80,136,40)
+      Font = Font["Bold,+1"]
+      Text = ("  Bolls Bible")
+      Picture = Picture["Bolls-Bible.png"]
+    }
+    { SonOfMan Button
+      Move(432,144,232,40)
+      Font = Font["Bold,+1"]
+      Text = ("  Son of Man (Terminal)")
+      Picture = Picture["sonofman.png"]
+    }
+    { BibleKjv Button
+      Move(112,144,216,40)
+      Font = Font["Bold,+1"]
+      Text = ("  Bible KJV (Terminal)")
+      Picture = Picture["bible.png"]
+    }
+    { OpenLp Button
+      Move(584,272,120,40)
+      Font = Font["Bold,+1"]
+      Text = ("  OpenLP")
+      Picture = Picture["openlp.png"]
+    }
+    { biblStudyLable Label
+      Move(16,16,192,32)
+      Font = Font["+4"]
+      Text = ("Bible Study")
+    }
+    { churchSoftwareLable Label
+      Move(16,216,192,32)
+      Font = Font["+4"]
+      Text = ("Church Software")
+    }
+    { familySettinsLabel Label
+      Move(16,336,192,32)
       Font = Font["+4"]
       Text = ("Family Settings")
     }

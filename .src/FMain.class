@@ -78,3 +78,77 @@ Public Sub dnsminderLauncher_Click()
   Exec ["dnsminder"]
 
 End
+
+Public Sub launchBibleTime_Click()
+
+  Exec ["bibletime"]
+
+End
+
+
+Public Sub launchXiphos_Click()
+
+  Exec ["xiphos"]
+
+End
+
+Public Sub launchBibledit_Click()
+
+  Exec ["bibledit"]
+
+End
+
+
+Public Sub launchPresenter_Click()
+
+  Exec ["launch-presenter.sh"]
+
+End
+
+Public Sub DnsMinder_Click()
+
+  Exec ["dnsminder"]
+
+End
+
+Public Sub HostMinder_Click()
+
+  Exec ["hostminder"]
+
+End
+
+Public Sub BollsBible_Click()
+
+  Exec ["flatpak", "run", "life.bolls.bolls"]
+
+End
+
+Public Sub FloodlightPresenter_Click()
+
+  Exec ["flatpak", "run", "io.gitlab.floodlight.Presenter"]
+
+End
+
+Public Sub SonOfMan_Click()
+
+  Exec ["gnome-terminal", "--", "bash", "-c", "flatpak run org.hlwd.sonofman"]
+
+End
+
+Public Sub BibleKjv_Click()
+
+    Exec ["gnome-terminal", "--", "bash", "-c", "bible"]
+
+End
+
+Public Sub OpenLp_Click()
+
+  Exec ["openlp"]
+
+End
+
+Public Sub Tabs_Click()
+
+  
+
+End
