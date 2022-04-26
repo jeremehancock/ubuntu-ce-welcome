@@ -176,7 +176,7 @@
       Picture = Picture["sonofman.png"]
     }
     { BibleKjv Button
-      Move(112,144,216,40)
+      Move(104,144,224,40)
       Font = Font["Bold,+1"]
       Text = ("  Bible KJV (Terminal)")
       Picture = Picture["bible.png"]
