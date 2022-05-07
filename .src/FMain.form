@@ -40,7 +40,7 @@
     { Description Label
       Move(24,8,712,440)
       Font = Font["+2"]
-      Text = ("Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system \ngeared towards Christians. It is based on the popular Ubuntu Linux. \n\nThe goal of UbuntuCE is to bring the power and security of \nUbuntu to Christians.\n\nUbuntuCE does not attempt to \"rebrand\" Ubuntu. So using UbuntuCE will \nhave the same general look and feel as Ubuntu.\n\nAlong with the standard Ubuntu applications, UbuntuCE includes additional  \nChristian software such as BibleTime, Xiphos, OpenLP, Presenter by \nWorshipTools, and more.\n\nUbuntuCE also comes with pre-configured web content filtering powered by \nCleanBrowsing. It is also easy to switch to other DNS providers that provide \nFamily filters by using the DNS Minder application.\n\nAdditionally UbuntuCE includes Host Minder. Host Minder is an application \nthat allows you to block unwanted domains from your system. It is highly \nrecommended that you give it a try.")
+      Text = ("Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system \ngeared towards Christians. It is based on the popular Ubuntu Linux. \n\nThe goal of UbuntuCE is to bring the power and security of \nUbuntu to Christians.\n\nUbuntuCE does not attempt to \"rebrand\" Ubuntu. So using UbuntuCE will \nhave the same general look and feel as Ubuntu.\n\nAlong with the standard Ubuntu applications, UbuntuCE includes additional  \nChristian software such as BibleTime, Xiphos, OpenLP, Presenter by \nWorshipTools, and more.\n\nUbuntuCE also comes with pre-configured web content filtering powered by \nCleanBrowsing. It is also easy to switch to other DNS providers that provide \nFamily filters by using the DNS Minder application.\n\nAdditionally UbuntuCE includes Host Minder, Parental Controls, and\nTimekpr-nExT to give you even more options to keep your system safe.")
     }
     Index = 1
     Text = ("  After Install  ")
@@ -95,9 +95,9 @@
       Text = ("Documentation")
     }
     { securityLabel Label
-      Move(24,256,192,32)
+      Move(24,256,296,32)
       Font = Font["+4"]
-      Text = ("Family Settings")
+      Text = ("Web Content Filtering")
     }
     { hostMinderLauncher Button
       Move(96,320,232,40)
@@ -112,6 +112,18 @@
     { familySettinsPanel Panel
       Move(16,376,720,72)
       Border = Border.Plain
+      { ParentalControls Button
+        Move(336,16,192,40)
+        Font = Font["Bold,+1"]
+        Text = (" Parental Controls")
+        Picture = Picture["parental-controls.png"]
+      }
+      { TimeKprNext Button
+        Move(536,16,168,40)
+        Font = Font["Bold,+1"]
+        Text = ("  Timekpr-nExT")
+        Picture = Picture["timekpr.png"]
+      }
     }
     { churchSoftwareLabel Panel
       Move(16,256,720,72)
@@ -152,13 +164,13 @@
       Picture = Picture["floodlight.png"]
     }
     { DnsMinder Button
-      Move(400,392,152,40)
+      Move(192,392,152,40)
       Font = Font["Bold,+1"]
       Text = ("  DNS MInder")
       Picture = Picture["dnsminder.png"]
     }
     { HostMinder Button
-      Move(200,392,152,40)
+      Move(32,392,152,40)
       Font = Font["Bold,+1"]
       Text = ("  Host Minder")
       Picture = Picture["hostminder.png"]

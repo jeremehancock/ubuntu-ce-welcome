@@ -147,8 +147,15 @@ Public Sub OpenLp_Click()
 
 End
 
-Public Sub Tabs_Click()
 
-  
+Public Sub ParentalControls_Click()
+
+  Exec ["ubuntu-ce-parental-controls"]
+
+End
+
+Public Sub TimeKprNext_Click()
+
+  Exec ["timekpra"]
 
 End
