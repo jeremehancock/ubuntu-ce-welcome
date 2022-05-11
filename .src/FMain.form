@@ -136,17 +136,17 @@
       }
     }
     { bibleStudyPanel Panel
-      Move(24,56,712,152)
+      Move(16,56,720,152)
       Border = Border.Plain
     }
     { launchBibleTime Button
-      Move(80,80,136,40)
+      Move(72,80,136,40)
       Font = Font["Bold,+1"]
       Text = ("  BibleTime")
       Picture = Picture["bibletime.png"]
     }
     { launchXiphos Button
-      Move(240,80,112,40)
+      Move(232,80,112,40)
       Font = Font["Bold,+1"]
       Text = ("  Xiphos")
       Picture = Picture["xiphos.png"]
@@ -194,7 +194,7 @@
       Picture = Picture["sonofman.png"]
     }
     { BibleKjv Button
-      Move(104,144,224,40)
+      Move(96,144,224,40)
       Font = Font["Bold,+1"]
       Text = ("  Bible KJV (Terminal)")
       Picture = Picture["bible.png"]
