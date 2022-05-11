@@ -156,7 +156,7 @@ End
 
 Public Sub TimeKprNext_Click()
 
-  Exec ["timekpra"]
+  Shell "pkexec '/usr/bin/timekpra'"
 
 End
 
