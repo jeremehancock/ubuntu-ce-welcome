@@ -141,7 +141,7 @@ Public Sub BibleKjv_Click()
 
 End
 
-Public Sub OpenLp_Click()
+Public Sub OpenLP_Click()
 
   Exec ["openlp"]
 
@@ -157,5 +157,11 @@ End
 Public Sub TimeKprNext_Click()
 
   Exec ["timekpra"]
+
+End
+
+Public Sub FreeShow_Click()
+
+  Exec ["freeshow"]
 
 End

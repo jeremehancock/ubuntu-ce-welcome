@@ -28,8 +28,8 @@
   { PictureBox1 PictureBox
     Move(784,-64,552,560)
     NoTabFocus = True
-    AutoResize = True
     Picture = Picture["ubuntu-logo.png"]
+    AutoResize = True
   }
   { Tabs TabStrip
     Move(16,96,752,496)
@@ -128,6 +128,12 @@
     { churchSoftwareLabel Panel
       Move(16,256,720,72)
       Border = Border.Plain
+      { FreeShow Button
+        Move(568,16,136,40)
+        Font = Font["Bold,+1"]
+        Text = ("  FreeShow")
+        Picture = Picture["freeshow.png"]
+      }
     }
     { bibleStudyPanel Panel
       Move(24,56,712,152)
@@ -152,13 +158,13 @@
       Picture = Picture["bibledit.png"]
     }
     { launchPresenter Button
-      Move(288,272,264,40)
+      Move(272,272,144,40)
       Font = Font["Bold,+1"]
-      Text = ("  Presenter by WorshipTools")
+      Text = ("  Presenter")
       Picture = Picture["worship-extreme-presenter.png"]
     }
     { FloodlightPresenter Button
-      Move(40,272,216,40)
+      Move(32,272,216,40)
       Font = Font["Bold,+1"]
       Text = ("  Floodlight Presenter")
       Picture = Picture["floodlight.png"]
@@ -193,8 +199,8 @@
       Text = ("  Bible KJV (Terminal)")
       Picture = Picture["bible.png"]
     }
-    { OpenLp Button
-      Move(584,272,120,40)
+    { OpenLP Button
+      Move(440,272,120,40)
       Font = Font["Bold,+1"]
       Text = ("  OpenLP")
       Picture = Picture["openlp.png"]
