@@ -12,9 +12,9 @@ Public Sub showHideToggle_Click()
 End
 
 Public Sub Form_Open()
-
+  
   If Exist(User.Home &/ ".config/autostart/ubuntu-ce-welcome.desktop") Then 
-    Shell "rm /tmp/ce-w-startup-true" Wait
+    Shell "rm /tmp/uce-w-startup-true" Wait
     Shell "rm /tmp/uce-w-startup-false" Wait
 
     Shell "if grep -Fxq 'X-GNOME-Autostart-enabled=true' ~/.config/autostart/ubuntu-ce-welcome.desktop; then touch /tmp/uce-w-startup-true; fi" Wait
@@ -34,7 +34,7 @@ End
 
 Public Sub Form_Close()
 
-    Shell "rm /tmp/ce-w-startup-true" Wait
+    Shell "rm /tmp/uce-w-startup-true" Wait
     Shell "rm /tmp/uce-w-startup-false" Wait
     
 End

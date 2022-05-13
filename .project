@@ -1,7 +1,7 @@
 # Gambas Project File 3.0
 Title=ubuntu-ce-welcome
 Startup=FMain
-Version=0.0.51
+Version=0.0.53
 Component=gb.image
 Component=gb.gui
 Component=gb.form

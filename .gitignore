@@ -18,3 +18,4 @@ vgcore.*
 
 *~
 .idea
+.gbc.stderr
