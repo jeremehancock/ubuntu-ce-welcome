@@ -1,6 +1,7 @@
 # Gambas Project File 3.0
-Title=ubuntu-ce-welcome
+Title=UbuntuCE Welcome
 Startup=FMain
+Icon=ubuntu-logo.png
 Version=0.0.53
 Component=gb.image
 Component=gb.gui
