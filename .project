@@ -7,5 +7,6 @@ Component=gb.image
 Component=gb.gui
 Component=gb.form
 TabSize=2
+Translate=1
 Language=en_US
 Packager=1
