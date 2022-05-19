@@ -1,0 +1,122 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  Move(0,0,1200,600)
+  #Scaled = False
+  Text = ("Welcome To UbuntuCE")
+  Resizable = False
+  Utility = True
+  SkipTaskbar = True
+  { Header TextLabel
+    Move(16,16,568,56)
+    Font = Font["+10"]
+    Text = ("Welcome To UbuntuCE")
+  }
+  { showHideToggle CheckBox
+    Move(1056,560,168,32)
+    NoTabFocus = True
+    Mouse = Mouse.Pointing
+    AutoResize = True
+    Text = ("Show on Startup     ")
+    Value = CheckBox.True
+  }
+  { patreonLauncher PictureBox
+    Move(816,512,208,80)
+    NoTabFocus = True
+    Mouse = Mouse.Pointing
+    Picture = Picture["patreon.png"]
+  }
+  { PictureBox1 PictureBox
+    Move(784,-64,552,560)
+    NoTabFocus = True
+    Picture = Picture["ubuntu-logo.png"]
+    AutoResize = True
+  }
+  { Tabs TabStrip
+    Move(16,96,752,496)
+    Count = 2
+    TextFont = Font["+2"]
+    Index = 0
+    Text = ("  Overview  ")
+    { Description Label
+      Move(24,8,712,440)
+      Font = Font["+2"]
+      Text = ("Ubuntu Christian Edition (UbuntuCE) is a free, open source operating system \ngeared towards Christians. It is based on the popular Ubuntu Linux. \n\nThe goal of UbuntuCE is to bring the power and security of \nUbuntu to Christians.\n\nUbuntuCE does not attempt to \"rebrand\" Ubuntu. So using UbuntuCE will \nhave the same general look and feel as Ubuntu.\n\nAlong with the standard Ubuntu applications, UbuntuCE includes additional  \nChristian software such as BibleTime, Xiphos, Presenter by WorshipTools,\nand more.\n\nUbuntuCE also comes with pre-configured web content filtering powered by \nCleanBrowsing. It is also easy to switch to other DNS providers that provide \nFamily filters by using the DNS Minder application.\n\nAdditionally UbuntuCE includes Host Minder, Parental Controls, and\nTimekpr-nExT to give you even more options to keep your system safe.")
+    }
+    Index = 1
+    Text = ("  After Install  ")
+    { helpPanel Panel
+      Move(496,104,216,88)
+      Border = Border.Plain
+    }
+    { appearancePanel Panel
+      Move(24,104,432,88)
+      Border = Border.Plain
+    }
+    { Panel1 Panel
+      Move(24,296,688,88)
+      Border = Border.Plain
+      { UbuntuCESoftwareCenterButton Button
+        Move(416,24,256,40)
+        Font = Font["Bold,+1"]
+        Text = ("UbuntuCE Software Center")
+        Picture = Picture["ubuntuce-software-center-logo.png"]
+      }
+      { Separator1 Separator
+        Move(384,16,8,56)
+      }
+      { hostMinderLauncher Button
+        Move(192,24,168,40)
+        Font = Font["Bold,+1"]
+        Mouse = Mouse.Pointing
+        Expand = True
+        Text = ("  Host Minder")
+        Picture = Picture["hostminder.png"]
+      }
+      { dnsminderLauncher Button
+        Move(16,24,160,40)
+        Font = Font["Bold,+1"]
+        Mouse = Mouse.Pointing
+        Text = ("  DNS Minder")
+        Picture = Picture["dnsminder.png"]
+      }
+    }
+    { changeWallpaper Button
+      Move(48,128,200,40)
+      Font = Font["Bold,+1"]
+      Mouse = Mouse.Pointing
+      Text = ("   Change Wallpaper")
+      Picture = Picture["wallpaper.png"]
+    }
+    { selectTheme Button
+      Move(272,128,160,40)
+      Font = Font["Bold,+1"]
+      Mouse = Mouse.Pointing
+      Text = ("  Select Theme")
+      Picture = Picture["theme.png"]
+    }
+    { docsLauncher Button
+      Move(536,128,136,40)
+      Font = Font["Bold,+1"]
+      Mouse = Mouse.Pointing
+      Text = ("  Get Help")
+      Picture = Picture["help.png"]
+    }
+    { appearanceLabel Label
+      Move(24,64,192,32)
+      Font = Font["+4"]
+      Text = ("Appearance")
+    }
+    { helpLabel Label
+      Move(496,64,192,32)
+      Font = Font["+4"]
+      Text = ("Documentation")
+    }
+    { configureLabel Label
+      Move(24,256,296,32)
+      Font = Font["+4"]
+      Text = ("Setup UbuntuCE")
+    }
+    Index = 0
+  }
+}

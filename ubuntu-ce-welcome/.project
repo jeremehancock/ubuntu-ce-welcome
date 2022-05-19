@@ -1,0 +1,22 @@
+# Gambas Project File 3.0
+Title=UbuntuCE Welcome
+Startup=FMain
+Icon=ubuntu-logo.png
+Version=0.0.54
+Component=gb.image
+Component=gb.gui
+Component=gb.form
+TabSize=2
+Translate=1
+Language=en_US
+Maintainer=Jereme Hancock
+Address=support@ubuntuce.com
+Url=ubuntuce.com
+License=General Public License
+PackageName=ubuntu-ce-welcome-0.0.54
+Packager=1
+Systems=ubuntu
+Menus=ubuntu:"Applications/System/Administration"
+Categories=ubuntu:"System"
+Groups=ubuntu:"utils"
+ExtraDependencies=ubuntu:"gambas3-gb-gtk3-wayland\t\t\ngambas3-gb-gtk3-x11\t\t\ngambas3-gb-gui\t\t\ngambas3-gb-form\t\t\nhostminder\t\t\ndnsminder\t\t\nubuntu-ce-software-center\t\t"
