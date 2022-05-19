@@ -29,7 +29,6 @@
   { PictureBox1 PictureBox
     Move(784,-64,552,560)
     NoTabFocus = True
-    Picture = Picture["ubuntu-logo.png"]
     AutoResize = True
   }
   { Tabs TabStrip
@@ -59,6 +58,7 @@
       { UbuntuCESoftwareCenterButton Button
         Move(416,24,256,40)
         Font = Font["Bold,+1"]
+        Mouse = Mouse.Pointing
         Text = ("UbuntuCE Software Center")
         Picture = Picture["ubuntuce-software-center-logo.png"]
       }
