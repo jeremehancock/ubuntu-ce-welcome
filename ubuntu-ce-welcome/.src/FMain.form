@@ -29,6 +29,7 @@
   { PictureBox1 PictureBox
     Move(784,-64,552,560)
     NoTabFocus = True
+    Picture = Picture["ubuntu-logo.png"]
     AutoResize = True
   }
   { Tabs TabStrip
