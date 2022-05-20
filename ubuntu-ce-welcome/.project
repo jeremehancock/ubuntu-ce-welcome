@@ -1,8 +1,8 @@
 # Gambas Project File 3.0
-Title=UbuntuCE Greeter
+Title=Welcome to UbuntuCE
 Startup=FMain
 Icon=ubuntu-logo.png
-Version=0.0.60
+Version=0.0.62
 Component=gb.image
 Component=gb.gui
 Component=gb.form
@@ -14,7 +14,7 @@ Maintainer=Jereme Hancock
 Address=support@ubuntuce.com
 Url=ubuntuce.com
 License=General Public License
-PackageName=ubuntu-ce-welcome-0.0.60
+PackageName=ubuntu-ce-welcome-0.0.62
 Packager=1
 Systems=ubuntu
 Menus=ubuntu:"Applications/System/Administration"
