@@ -1,10 +1,4 @@
-<h1><img src="https://raw.githubusercontent.com/jeremehancock/ubuntu-ce-welcome/main/ubuntu-logo.png" height="50" /> UbuntuCE Welcome</h1>
-
-<img src="https://raw.githubusercontent.com/jeremehancock/ubuntu-ce-welcome/main/welcome-summary.png" />
-
-<img src="https://raw.githubusercontent.com/jeremehancock/ubuntu-ce-welcome/main/welcome-after-install.png" />
-
-<img src="https://raw.githubusercontent.com/jeremehancock/ubuntu-ce-welcome/main/welcome-software.png" />
+<h1><img src="https://raw.githubusercontent.com/jeremehancock/ubuntu-ce-welcome/main/ubuntu-logo.png" height="50" /> UbuntuCE Greeter</h1>
 
 ## Built for UbuntuCE:
 
