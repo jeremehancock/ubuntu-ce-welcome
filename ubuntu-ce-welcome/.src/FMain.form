@@ -32,6 +32,25 @@
     Picture = Picture["ubuntu-logo.png"]
     AutoResize = True
   }
+  { InstallPanel Panel
+    Move(16,96,752,496)
+    Visible = False
+    { InstallProgress ProgressBar
+      Move(176,216,400,16)
+      Label = False
+      Pulse = True
+    }
+    { InstallLabel Label
+      Move(8,184,736,24)
+      Font = Font["+3"]
+      Alignment = Align.Center
+      Text = ("Installing") & "..."
+    }
+    { Terminal TerminalView
+      Move(0,264,752,232)
+      Visible = False
+    }
+  }
   { Tabs TabStrip
     Move(16,96,752,496)
     Count = 2

@@ -38,6 +38,43 @@ Public Sub Form_Close()
   
 End
 
+Public Sub Show_Progress(type As String, appTitle As String)
+  
+  InstallLabel.Text = type & " " & appTitle & "..." ""
+  InstallPanel.Show
+  Tabs.Hide
+  
+End
+
+Public Sub Hide_Progress()
+  
+  InstallLabel.Text = "Installing..."
+  InstallPanel.Hide
+  Tabs.Show
+  
+End
+
+Sub install_app(appName As String, appTitle As String)
+  
+  Dim InstallProcess As Process
+  
+  If Message.Question(appTitle & " is not installed.\n\nWould you like to install now?") = 1 Then 
+    InstallProcess = Terminal.Shell("pkexec sh -c 'apt update && apt install " & appName & " -y'")
+    
+    Show_Progress("Installing", appTitle)
+    
+    Do
+      Try Wait 0.5    
+    Loop Until InstallProcess.State = 0
+    
+    Hide_Progress()
+    
+    InstallProcess = Null
+    
+  Endif
+  
+End
+
 Public Sub patreonLauncher_MouseDown()
   
   Shell "xdg-open 'https://www.patreon.com/ubuntuce'"
@@ -58,7 +95,16 @@ End
 
 Public Sub hostMinderLauncher_Click()
   
-  Exec ["hostminder"]
+  Dim CheckResult As String
+  Dim InstallProcess As Process
+  
+  Shell ("apt-cache policy hostminder | grep 'none' | awk '{print $2}'") To CheckResult
+  
+  If InStr(CheckResult, "(none)") = 1 Then 
+    install_app("hostminder", "Host Minder")
+  Else 
+    Exec ["dnsminder"]
+  Endif
   
 End
 
@@ -70,7 +116,16 @@ End
 
 Public Sub dnsminderLauncher_Click()
   
-  Exec ["dnsminder"]
+  Dim CheckResult As String
+  Dim InstallProcess As Process
+  
+  Shell ("apt-cache policy dnsminder | grep 'none' | awk '{print $2}'") To CheckResult
+  
+  If InStr(CheckResult, "(none)") = 1 Then 
+    install_app("dnsminder", "DNS Minder")
+  Else 
+    Exec ["dnsminder"]
+  Endif
   
 End
 
@@ -160,6 +215,15 @@ End
 
 Public Sub UbuntuCESoftwareCenterButton_Click()
   
-  Exec ["ubuntu-ce-software-center"]
+  Dim CheckResult As String
+  Dim InstallProcess As Process
+  
+  Shell ("apt-cache policy ubuntu-ce-software-center | grep 'none' | awk '{print $2}'") To CheckResult
+  
+  If InStr(CheckResult, "(none)") = 1 Then 
+    install_app("ubuntu-ce-software-center", "UbuntuCE Software Center")
+  Else 
+    Exec ["ubuntu-ce-software-center"]
+  Endif
   
 End
