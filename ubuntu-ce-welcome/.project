@@ -2,7 +2,7 @@
 Title=Welcome to UbuntuCE
 Startup=FMain
 Icon=ubuntu-logo.png
-Version=0.0.64
+Version=0.0.66
 Component=gb.image
 Component=gb.gui
 Component=gb.form
@@ -16,7 +16,7 @@ Maintainer=Jereme Hancock
 Address=support@ubuntuce.com
 Url=ubuntuce.com
 License=General Public License
-PackageName=ubuntu-ce-welcome-0.0.64
+PackageName=ubuntu-ce-welcome-0.0.66
 Packager=1
 Systems=ubuntu
 Menus=ubuntu:"Applications/System/Administration"

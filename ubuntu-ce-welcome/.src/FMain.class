@@ -103,7 +103,7 @@ Public Sub hostMinderLauncher_Click()
   If InStr(CheckResult, "(none)") = 1 Then 
     install_app("hostminder", "Host Minder")
   Else 
-    Exec ["dnsminder"]
+    Exec ["hostminder"]
   Endif
   
 End
